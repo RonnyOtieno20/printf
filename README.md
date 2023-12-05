@@ -1,2 +1,2 @@
 # printf
-Create a custom printf function
+This is a printf pair project repository
