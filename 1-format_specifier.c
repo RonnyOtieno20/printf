@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_binary - Prints the binary value.
+ * _print_bin - Prints the binary value.
  * @args: The arguments list.
  * @buffer: Pointer to the buffer_t struct.
  *
@@ -24,7 +24,7 @@ int _print_bin(va_list args, buffer_t *buffer)
  * Return: Number of characters printed.
  */
 
-int _print_o(va_list args, buffer_t *buffer)
+int _print_oct(va_list args, buffer_t *buffer)
 {
 
 	unsigned int n = va_arg(args, unsigned int);
