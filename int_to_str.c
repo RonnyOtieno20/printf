@@ -20,13 +20,13 @@ int int_to_string(int num, buffer_t *buffer)
 		return (add_to_buffer(buffer, '0'));
 	}
 
-	if (n == INT_MIN)
+	if (num == INT_MIN)
 	{
 
 		if (add_to_buffer(buffer, '8') == -1)
 			return (-1);
 		num /= 10;
-		num = -n;
+		num = -num;
 		count++;
 	}
 	else if (num < 0)

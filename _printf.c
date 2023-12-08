@@ -8,7 +8,7 @@
 void init_format_handlers(format_mapper_t *format_mappers)
 {
 	format_mappers[0].specifier = 'c';
-	format_mappers[0].handler = _print_ch;
+	format_mappers[0].handler = _print_char;
 
 	format_mappers[1].specifier = 's';
 	format_mappers[1].handler = _print_str;
@@ -23,19 +23,19 @@ void init_format_handlers(format_mapper_t *format_mappers)
 	format_mappers[4].handler = _print_int;
 
 	format_mappers[5].specifier = 'b';
-	format_mappers[5].handler = _print_binary;
+	format_mappers[5].handler = _print_bin;
 
 	format_mappers[6].specifier = 'u';
 	format_mappers[6].handler = _print_u;
 
 	format_mappers[7].specifier = 'o';
-	format_mappers[7].handler = _print_o;
+	format_mappers[7].handler = _print_oct;
 
 	format_mappers[8].specifier = 'x';
-	format_mappers[8].handler = _print_x;
+	format_mappers[8].handler = _print_hex;
 
 	format_mappers[9].specifier = 'X';
-	format_mappers[9].handler = _print_X;
+	format_mappers[9].handler = _print_heX;
 
 	format_mappers[10].specifier = '\0';
 	format_mappers[10].handler = NULL;
