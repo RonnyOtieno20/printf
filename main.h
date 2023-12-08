@@ -41,7 +41,7 @@ int _print_str(va_list args, buffer_t *buffer);
 int _print_pct(va_list args, buffer_t *buffer);
 int _print_int(va_list args, buffer_t *buffer);
 int _print_bin(va_list args, buffer_t *buffer);
-int int_to_string(int num, buffer_t *buffer);
+int int_to_string(int n, buffer_t *buffer);
 int _print_u(va_list args, buffer_t *buffer);
 int _print_oct(va_list args, buffer_t *buffer);
 int _print_hex(va_list args, buffer_t *buffer);
